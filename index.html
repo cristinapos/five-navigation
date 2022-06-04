@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Navigation">
+        <meta name="keywords" content="HTML,CSS,JS">
+        <meta name="author" content="Cristina Postolachi">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navigation</title>
+        <link rel="stylesheet" type="text/css" href="resources/main.css">
+        <style></style>
+    </head>
+    <body>
+        <div class="container-body">
+            <div class="black">Free shipping on orders over $ 250</div>
+            <div class="container-navigation">
+                <nav class="sidebar">
+                    <h1 class="title-sidebar hidden">Boundary</h1>
+                    <img src="assets/logo-vip.png" alt="logo-vip" class="content orders-container details-container logo">
+                    <img src="assets/logo-gold.png" alt="logo-vip" class="content reward-container logo hidden" >
+                    <img src="assets/logo-elite.png" alt="logo-vip" class="content account-container logo hidden" >
+                    <img src="assets/logo-member.png" alt="logo-vip" class="content payment-container logo hidden" >
+                    <ul>
+                        <li><a class="menu-item selected" data-content="orders-container">Your orders<span></span></a></li>
+                        <li><a class="menu-item" sdata-content="reward-container">Reward status<span></span></a></li>
+                        <li><a class="menu-item" data-content="account-container">Account settings<span></span></a></li>
+                        <li><a class="menu-item" data-content="payment-container">Payment methods<span></span></a></li>
+                        <li><a class="menu-item" data-content="sign-out-container">Sign Out<span></span></a></li>
+                    </ul>
+                </nav>
+                <section>
+                    <nav class="navbar-section hidden">
+                        <ul>
+                            <li><a class="menu-item">Shop</a></li>
+                            <li><a class="menu-item"><img src="assets/icon-find.png" alt="find"></a></li>
+                            <li><a class="menu-item"><img src="assets/icon-cart-2.png" alt="cart"></a></li>
+                            <li><a class="menu-item"><img src="assets/icon-exit-3.png" alt="exit"></a></li>
+                        </ul>
+                    </nav>
+                    <div class="content orders-container" id="orders-container">
+                        <h1>Your orders</h1>
+                        <div class="orders-content">
+                            <div  class="img-order">
+                                <img src="assets/product-1/product.png" alt="product-img">
+                            </div>
+                            <div class="content-text-order">
+                                <div class="about-product">
+                                    <div>
+                                        <div>
+                                            <p class="date-order">April 1, 2019</p>
+                                            <h2>Proccesing</h2>
+                                        </div>
+                                        <div>
+                                            <p class="order-#">Order #</p>
+                                            <h3>30004</h3>
+                                        </div>
+                                        <div>
+                                            <p class="order-price">Order total</p>
+                                            <h3>$ 324,96</h3>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><a class="menu-item" data-content="details-container">Orders details</a></li>
+                                        <li><a href="#">Cancel / Modify</a></li>
+                                    </ul>
+                                </div>
+                                <div class="images-second-orders">
+                                    <p>Also in this order</p>
+                                    <div>
+                                        <div>
+                                            <img src="assets/product-1/addition-1.png" alt="additional-one">
+                                        </div>
+                                        <div>
+                                            <img src="assets/product-1/addition-3.png" alt="additional-two">
+                                        </div>
+                                        <div>
+                                            <img src="assets/product-1/addition-4.png" alt="additional-three">
+                                        </div>
+                                        <div>
+                                            <button>+3 more</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content details-container hidden" id="details-container">
+                        <div class="titles-details">
+                            <div>
+                                <p>Your orders/order #30002</p>
+                                <h2>Order details</h2>
+                            </div>
+                            <h3>Order cancelled</h3>
+                        </div>
+                        <div class="inf-details">
+                            <div class="billing">
+                                <h4>Billing</h4>
+                                <div>
+                                    <p>Rally Interactive</p>
+                                    <p>244 W 300 N</p>
+                                    <p>Salt Lake City, Utah 84103</p>
+                                    <p>United States</p>
+                                    <p>(801)643-3595</p>
+                                </div>
+                                <div>
+                                    <p>Payment status:</p>
+                                    <p>Refunded</p>
+                                </div>
+                            </div>
+                            <div class="shipping">
+                                <h4>Shipping</h4>
+                                <div>
+                                    <p>Rally Interactive</p>
+                                    <p>244 W 300 N</p>
+                                    <p>Salt Lake City, Utah 84103</p>
+                                    <p>United States</p>
+                                    <p>(801)643-3595</p>
+                                </div>
+                                <div>
+                                    <p>Payment status:</p>
+                                    <p>Unfulfilled</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content reward-container hidden" id="reward-container">
+                        <h1>Reward status</h1>
+                        <div class="reward-content">
+                            <div class="activity">
+                                <p>Activity</p>
+                                <div class="activity-dates">
+                                    <div>
+                                        <h3>Vip</h3>
+                                        <p>Current status</p>
+                                    </div>
+                                    <div>
+                                        <h3>Gold</h3>
+                                        <p>Next tier</p>
+                                    </div>
+                                    <div>
+                                        <h3>$ 678.42</h3>
+                                        <p>Lifetime spend</p>
+                                    </div>
+                                    <div>
+                                        <h3>$ 321.68</h3>
+                                        <p>To gold status</p>
+                                    </div>
+                                    <div>
+                                        <h3>003</h3>
+                                        <p>Orders</p>
+                                    </div>
+                                    <div>
+                                        <h3>007</h3>
+                                        <p>Referrals</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="benefits">
+                                <p>Benefits</p>
+                                <div class="icon-benefits">
+                                    <div><img src="assets/icon-recurrent.png" alt="icon-recurrent"></div>
+                                    <div><img src="assets/icon-savings.png" alt="icon-saving"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content account-container hidden" id="account-container">
+                        <h2>Account settings</h2>
+                        <div class="form">
+                            <h3>Account</h3>
+                            <form action="">
+                                <div>
+                                    <label for="fullname"></label>
+                                    <input type="text" id="fullname" name="fullname" value="Ben Cline" placeholder="Enter your name">
+                                </div>
+                                <div>
+                                    <label for="phone"></label>
+                                    <input type="tel" id="phone" name="phone" value="+1 801 641 09" placeholder="Enter your phone">
+                                </div>
+                                <div>
+                                    <label for="amail"></label>
+                                    <input type="email" id="email" name="email" value="ben@rallyinteractive.com" placeholder="Enter your email">
+                                </div>
+                                <div>
+                                    <label for="password"></label>
+                                    <input type="password" id="password" name="password" value="123456789123" placeholder="Enter your password">
+                                </div>
+                                <div>
+                                    <button>Save changes</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="account-card">
+                            <h3>Addresses</h3>
+                            <div class="cards">
+                                <div>
+                                    <p>Ben Cline</p>
+                                    <p>1234 S. Fllestwood Mac Dr</p>
+                                    <p>Salt Lake City, Ut B4109</p>
+                                    <p>United States</p>
+                                    <p>+1 801 641 09</p>
+                                </div>
+                                <div>
+                                    <p>Ben Cline</p>
+                                    <p>C/O Rally Interactive</p>
+                                    <p>Salt Lake City, Ut B4109</p>
+                                    <p>United States</p>
+                                    <p>+1 801 641 09</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content payment-container hidden" id="payment-container">
+                        <h2>Payment methods</h2>
+                        <div class="img-payment">
+                            <img src="assets/card-1.png" alt="card-1">
+                            <img src="assets/card-3.png" alt="card-3">
+                            <img src="assets/card-2.png" alt="card-2">
+                            <div class="icon-plus">
+                                <img src="assets/icon-plus.png" alt="icon-plus">
+                                <h3>Add card</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content sign-out-container hidden" id="sign-out-container">
+                        <p>contact</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <script src="resources/main.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,521 @@
+/* General */
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden-h1 {
+    display: none;
+}
+
+.container-body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.black {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.7em;
+    line-height: 3;
+    height: 3em;
+    font-weight: bold;
+}
+
+.container-navigation {
+    display: flex;
+    height: 100%;
+}
+
+.container-navigation .sidebar {
+    width: 20%;
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2ede8;
+}
+
+.sidebar img {
+    margin-top: 9em;
+    margin-bottom: 0.6em;
+}
+
+.sidebar ul{
+   list-style: none;
+}
+
+.sidebar ul li {
+    padding-bottom: 0.5em;
+}
+
+.sidebar ul li a{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.sidebar ul li a.selected span{
+    height: 7px;
+    display: block;
+    position: relative;
+    top: -4px;
+    background: linear-gradient(0deg, #e8e0d8 7px, transparent 7px) 0em;
+}
+
+.container-navigation section {
+    width: 80%;
+}
+
+/*Orders-container*/
+
+.orders-container {
+    margin-top: 9em;
+    padding-left: 4em;
+    margin-bottom: 8em;
+}
+
+.orders-container h1 {
+    font-size: 3em;
+    width: 5em;
+    margin-bottom: -1em;
+    padding-bottom: 1.5em;
+}
+
+.orders-content {
+    display: flex;
+}
+
+.content-text-order {
+    margin-left: 1.5em;
+}
+
+.about-product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-product >:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.about-product >:first-child p {
+    font-size: 0.7em;
+    margin-bottom: 0.3em;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.about-product >:first-child h2 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+
+.about-product >:first-child h3 {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+
+.about-product ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    list-style: none;
+}
+
+.about-product ul li a{
+    cursor: pointer;
+    font-size: 0.7em;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+.img-order {
+    background-color: #e8e0d8;
+    height: 19em;
+    display: flex;
+    align-items: center;
+}
+
+.img-order img {
+    width: 15em;
+}
+
+.images-second-orders {
+    display: flex;
+    flex-direction: column;
+}
+
+.images-second-orders p {
+    font-size: 0.8em;
+    margin-bottom: 1em;
+    margin-top: 0; 
+    font-weight: bold;
+}
+
+.images-second-orders >:last-child {
+    display: flex;
+}
+
+.images-second-orders >:last-child div{
+    background-color: #e8e0d8;
+    height: 5.8em;
+    width: 5.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1em;
+}
+
+.images-second-orders >:last-child >:last-child {
+    margin-right: 0;
+}
+
+.images-second-orders >:last-child >:last-child button{
+    margin-bottom: 0;
+    width: 3em;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+.images-second-orders >:last-child div img{
+    width: 5em;
+}
+
+/*Reward-container*/
+.title-sidebar {
+    text-transform: uppercase;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    align-self: flex-start;
+    padding-top: 0.5em;
+}
+
+.navbar-section ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.navbar-section ul li {
+    margin-right: 4em;
+}
+
+.navbar-section ul >:last-child {
+    margin-right: 3em;
+}
+
+.navbar-section ul li a {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-section ul li a img {
+    width: 1.5em;
+}
+
+.reward-container {
+    margin-top: 4em;
+    padding-left: 4em;
+    margin-bottom: 8em;
+}
+
+.reward-container h1 {
+    font-size: 3em;
+    width: 5em;
+    margin-bottom: -1em;
+    padding-bottom: 1.5em;
+}
+
+.reward-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.activity {
+    display: flex;
+    margin-bottom: 3em;
+}
+
+.activity p {
+    margin-right: 10em;
+    font-weight: bold;
+}
+
+.activity-dates {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.activity-dates div {
+    width: 40%;
+}
+
+.activity-dates div p{
+    width: 100%;
+    font-weight: bold;
+}
+
+.activity-dates div h3{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.benefits {
+    display: flex;
+}
+
+.benefits p{
+    margin-right: 10em;
+    font-weight: bold;
+}
+
+.icon-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.icon-benefits div {
+    width: 40%;
+}
+
+.icon-benefits img {
+    width: 3.5em;
+}
+
+/*Account settings*/
+.account-container {
+    margin-top: 4em;
+    padding-left: 4em;
+    margin-bottom: 8em;
+}
+
+.account-container h2 {
+    font-size: 3em;
+    width: 5em;
+    margin-bottom: -1em;
+    padding-bottom: 1.5em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5em;
+}
+
+.form h3 {
+    margin: 0 0 0.6em 0;
+    font-size: 1.1em;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form div {
+    width: 37.1%;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    display: flex;
+
+}
+
+form input {
+    width: 100%;
+    font-weight: bold;
+    padding: 0.8em;
+    border: 2px solid #e8e0d8;
+    margin-right: 1.5em;
+}
+
+form button {
+    width: 100%;
+    padding: 0.5em 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    background: #262626;
+    border: none;
+    text-transform: uppercase;
+    margin-right: 1.1em;
+}
+
+.account-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.account-card h3 {
+    margin: 0 0 0.6em 0;
+    font-size: 1.1em;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards div {
+    width: 35.1%;
+    background: #262626;
+    color: white;
+    border-radius: 15px;
+    padding: 2em 0 1em 0;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2.1em;
+    margin-bottom: 1em;
+}
+
+
+.cards div p {
+    margin: 0 1.5em 0 0;
+    line-height: 1.5em;
+    width: 100%;
+    padding: 0em 0.8em;
+}
+
+
+/*Payment-container*/
+.payment-container {
+    margin-top: 4em;
+    padding-left: 4em;
+    margin-bottom: 8em;
+}
+
+.payment-container h2 {
+    font-size: 3em;
+    width: 5em;
+    margin-bottom: -1em;
+    padding-bottom: 1.5em;
+}
+
+.img-payment {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-payment img, .icon-plus {
+    width: 37.1%;
+    margin-right: 1.8em;
+    margin-bottom: 1em;
+}
+
+.img-payment .icon-plus {
+    background-color: #e8e0d8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-payment .icon-plus img{
+    margin: 0;
+    width: 15%;
+}
+
+.img-payment .icon-plus h3{
+    text-transform: uppercase;
+    margin: 0.5em;
+}
+
+/*Details-container*/
+.details-container {
+    margin-top: 4em;
+    padding-left: 4em;
+    margin-bottom: 8em;
+    display: flex;
+    flex-direction: column;
+}
+
+.titles-details{
+     display: flex;
+     flex-direction: row;
+     margin-bottom: 2em;
+}
+
+.titles-details h3 {
+    align-self: flex-end;
+    padding-bottom: 0.7em;
+    width: 5em;
+    text-transform: capitalize;
+}
+
+.titles-details >:first-child {
+    width: 60%;
+}
+
+.titles-details >:first-child h2 {
+    font-size: 3em;
+    width: 30%;
+    margin-bottom: -1em;
+    padding-bottom: 1.5em;
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+.titles-details >:first-child p {
+    margin: 0;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.inf-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.billing , .shipping {
+    display: flex;
+    margin-bottom: 3em;
+}
+
+.billing h4, .shipping h4 {
+    margin: 0;
+    font-size: 1.05em;
+    width: 25%;
+}
+
+.billing >:nth-child(2), .shipping >:nth-child(2) {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.billing >:nth-child(2) p, .shipping >:nth-child(2) p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.8em;
+    line-height: 1.6;
+    width: 60%;
+}
+
+.billing >:last-child p, .shipping >:last-child p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-transform: capitalize;
+}

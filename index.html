@@ -16,16 +16,18 @@
             <div class="container-navigation">
                 <nav class="sidebar">
                     <h1 class="title-sidebar hidden">Boundary</h1>
-                    <img src="assets/logo-vip.png" alt="logo-vip" class="content orders-container details-container logo">
-                    <img src="assets/logo-gold.png" alt="logo-vip" class="content reward-container logo hidden" >
-                    <img src="assets/logo-elite.png" alt="logo-vip" class="content account-container logo hidden" >
-                    <img src="assets/logo-member.png" alt="logo-vip" class="content payment-container logo hidden" >
+                    <img src="assets/logo-vip.png" alt="logo-vip" class="orders-container logo">
+                    <img src="assets/logo-vip.png" alt="logo-vip" class="details-container logo hidden">
+                    <img src="assets/logo-gold.png" alt="logo-gold" class="reward-container logo hidden">
+                    <img src="assets/logo-elite.png" alt="logo-elite" class="account-container logo hidden">
+                    <img src="assets/logo-member.png" alt="logo-member" class="payment-container logo hidden">
+                    <img src="assets/logo-vip.png" alt="logo-vip" class="sign-out-container logo hidden">
                     <ul>
-                        <li><a class="menu-item selected" data-content="orders-container">Your orders<span></span></a></li>
-                        <li><a class="menu-item" sdata-content="reward-container">Reward status<span></span></a></li>
-                        <li><a class="menu-item" data-content="account-container">Account settings<span></span></a></li>
-                        <li><a class="menu-item" data-content="payment-container">Payment methods<span></span></a></li>
-                        <li><a class="menu-item" data-content="sign-out-container">Sign Out<span></span></a></li>
+                        <li class="selected-li active"><a class="menu-item selected" data-logo="orders-container" data-content="orders-container">Your orders</a></li>
+                        <li><a class="menu-item" data-logo="reward-container" data-content="reward-container">Reward status</a></li>
+                        <li><a class="menu-item" data-logo="account-container"  data-content="account-container">Account settings</a></li>
+                        <li><a class="menu-item" data-logo="payment-container" data-content="payment-container">Payment methods</a></li>
+                        <li><a class="menu-item" data-logo="sign-out-container" data-content="sign-out-container">Sign Out</a></li>
                     </ul>
                 </nav>
                 <section>
@@ -60,7 +62,7 @@
                                         </div>
                                     </div>
                                     <ul>
-                                        <li><a class="menu-item" data-content="details-container">Orders details</a></li>
+                                        <li><a class="menu-item" data-logo="details-container" data-content="details-container">Orders details</a></li>
                                         <li><a href="#">Cancel / Modify</a></li>
                                     </ul>
                                 </div>
@@ -223,7 +225,13 @@
                         </div>
                     </div>
                     <div class="content sign-out-container hidden" id="sign-out-container">
-                        <p>contact</p>
+                        <div class="content-sign-out">
+                            <div>Are you leaving so quickly?</div>
+                            <div class="buttons">
+                                <button class="yes">Yes</button>
+                                <button class="no">No</button>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>

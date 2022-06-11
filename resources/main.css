@@ -8,21 +8,19 @@ html, body {
 }
 
 .hidden {
-    display: none;
-}
-
-.hidden-h1 {
-    display: none;
+    display: none !important;
 }
 
 .container-body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background: #f8f5f2;
+    color:#231f20;
 }
 
 .black {
-    background-color: black;
+    background-color: #231f20;
     color: white;
     text-align: center;
     font-size: 0.7em;
@@ -55,7 +53,7 @@ html, body {
 }
 
 .sidebar ul li {
-    padding-bottom: 0.5em;
+    padding-top: 0.5em;
 }
 
 .sidebar ul li a{
@@ -65,12 +63,10 @@ html, body {
     cursor: pointer;
 }
 
-.sidebar ul li a.selected span{
-    height: 7px;
-    display: block;
-    position: relative;
-    top: -4px;
-    background: linear-gradient(0deg, #e8e0d8 7px, transparent 7px) 0em;
+.sidebar ul li.active {
+    border-bottom: 5px solid #e8e0d8;
+    line-height: 0.5;
+    padding-top: 0.8em;
 }
 
 .container-navigation section {
@@ -144,7 +140,7 @@ html, body {
     cursor: pointer;
     font-size: 0.7em;
     text-decoration: none;
-    color: black;
+    color: #231f20;
     font-weight: bold;
 }
 
@@ -237,7 +233,7 @@ html, body {
 .reward-container {
     margin-top: 4em;
     padding-left: 4em;
-    margin-bottom: 8em;
+    margin-bottom: 5em;
 }
 
 .reward-container h1 {
@@ -308,7 +304,7 @@ html, body {
 .account-container {
     margin-top: 4em;
     padding-left: 4em;
-    margin-bottom: 8em;
+    margin-bottom: 5em;
 }
 
 .account-container h2 {
@@ -402,7 +398,7 @@ form button {
 .payment-container {
     margin-top: 4em;
     padding-left: 4em;
-    margin-bottom: 8em;
+    margin-bottom: 5em;
 }
 
 .payment-container h2 {
@@ -518,4 +514,32 @@ form button {
     font-weight: bold;
     font-size: 0.8em;
     text-transform: capitalize;
+}
+
+
+/*Sign-out-container*/
+.sign-out-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15em;
+}
+
+.content-sign-out {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    background: #e8e0d8;
+}
+
+.buttons {
+    padding-top: 1em;
+}
+
+.buttons button {
+    border: none;
+    background-color: #f8f5f2;
+    color: #231f20;
+    font-weight: bold;
 }

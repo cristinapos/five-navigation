@@ -5,19 +5,9 @@ document.addEventListener("DOMContentLoaded", function() {
     for(let i = 0; i < menuItems.length; i++) {
         const menuItem = menuItems[i];
         menuItem.addEventListener("click", function() {
-            // for(let j = 0; j < menuItems.length; j++) {
-            //     if(menuItems[j].classList.contains("selected")) {
-            //         menuItems[j].classList.remove("selected");
-            //     } else {
-            //         continue;
-            //     }
-            // }
-            // menuItem.classList.add("selected");
             for(let j = 0; j < menuItems.length; j++) {
                 menuItems[j].classList.remove("selected");
                 menuItems[j].parentNode.classList.remove("active");
-
-
             }
 
             this.classList.add("selected");
@@ -42,14 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
             if (dataContent === 'details-container') {
                 document.querySelector('.selected-li').classList.add('active');
             }
-
-            // document.getElementById('details-container').style.display = "none";
-            // document.querySelector('.details-container').style.display = "none";
-            // if (dataContent === 'details-container') {
-            //     document.getElementById('details-container').style.display = "flex";
-            //     document.querySelector('.details-container').style.display = "flex";
-            // }
-
 
             const contentElements = document.getElementsByClassName("content");
             for(let k = 0; k < contentElements.length; k++) {

@@ -11,17 +11,18 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
             this.classList.add("selected");
-
+            // sa te obisnuiesti sa iti cureti codul de console.log cand nu mai ai nevoie de ele
             console.log(this);
 
             this.parentNode.classList.add('active')
             
             const dataContent = this.dataset.content;
-
+            // atentie la prea multe spatii, impacteaza gradul de readability in cod
 
             const dataLogo = this.dataset.logo;
 
             if (dataContent === 'reward-container' || dataContent === 'account-container' || dataContent === 'payment-container' || dataContent === 'details-container') {
+                // ai aceeasi seletori in ramurile de if si else, iti recomand sa salvezi selectiile in constante
                 document.querySelector('.title-sidebar').classList.remove('hidden');
                 document.querySelector('.navbar-section').classList.remove('hidden');
             } else {
@@ -51,6 +52,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-
+    // atentie si aici la cod incomplet lasat
     const logo = document.getElementsByClassName
 });

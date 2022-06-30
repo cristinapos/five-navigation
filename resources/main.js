@@ -12,21 +12,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
             this.classList.add("selected");
 
-            console.log(this);
-
             this.parentNode.classList.add('active')
             
             const dataContent = this.dataset.content;
-
-
             const dataLogo = this.dataset.logo;
 
+            const titleSidebar = document.querySelector('.title-sidebar');
+            const navSection = document.querySelector('.navbar-section');
+
             if (dataContent === 'reward-container' || dataContent === 'account-container' || dataContent === 'payment-container' || dataContent === 'details-container') {
-                document.querySelector('.title-sidebar').classList.remove('hidden');
-                document.querySelector('.navbar-section').classList.remove('hidden');
+                titleSidebar.classList.remove('hidden');
+                navSection.classList.remove('hidden');
             } else {
-                document.querySelector('.title-sidebar').classList.add('hidden');
-                document.querySelector('.navbar-section').classList.add('hidden');
+                titleSidebar.classList.add('hidden');
+                navSection.classList.add('hidden');
             }
 
             if (dataContent === 'details-container') {
@@ -43,14 +42,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 logoElements[k].classList.add("hidden");
             }
 
-
             document.getElementsByClassName(dataContent)[0].classList.remove("hidden");
             document.getElementById(dataContent).classList.remove("hidden");
             document.getElementsByClassName(dataLogo)[0].classList.remove("hidden");
             document.getElementById(dataLogo).classList.remove("hidden");
         });
     }
-
-
-    const logo = document.getElementsByClassName
 });

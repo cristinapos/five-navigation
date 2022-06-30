@@ -7,10 +7,6 @@ html, body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.hidden {
-    display: none !important;
-}
-
 .container-body {
     display: flex;
     flex-direction: column;
@@ -542,4 +538,8 @@ form button {
     background-color: #f8f5f2;
     color: #231f20;
     font-weight: bold;
+}
+
+.hidden {
+    display: none;
 }
